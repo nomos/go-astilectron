@@ -118,7 +118,7 @@ func (p *Paths) initDataDirectory(dataDirectoryPath, appName string) (err error)
 
 // AstilectronDownloadSrc returns the download URL of the (currently platform-independent) astilectron zip file
 func AstilectronDownloadSrc(versionAstilectron string) string {
-	return fmt.Sprintf("https://github.com/asticode/astilectron/archive/v%s.zip", versionAstilectron)
+	return fmt.Sprintf("http://res.pixelpoly.net/go-astilectron/astilectron/v%s.zip", versionAstilectron)
 }
 
 // ElectronDownloadSrc returns the download URL of the platform-dependant electron zipfile
@@ -145,7 +145,7 @@ func ElectronDownloadSrc(os, arch, versionElectron string) string {
 	}
 
 	// Return url
-	return fmt.Sprintf("https://github.com/electron/electron/releases/download/v%s/electron-v%s-%s-%s.zip", versionElectron, versionElectron, o, a)
+	return fmt.Sprintf("http://res.pixelpoly.net/go-astilectron/electron/electron-v%s-%s-%s.zip", versionElectron, o, a)
 }
 
 // initAppExecutable initializes the app executable path
